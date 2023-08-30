@@ -16,6 +16,9 @@ function checkUserInput() {
   } else if (remainingChars <= 10) {
     inputElement.classList.add("warning");
     remainingCharElement.classList.add("warning");
+
+    inputElement.classList.remove("error");
+    remainingCharElement.classList.remove("error");
   } else {
     inputElement.classList.remove("error", "warning");
     remainingCharElement.classList.remove("error", "warning");
